@@ -12,11 +12,14 @@
   --paragraph-font-size: 16px;
 }
 
-@font-face {
+/* @font-face {
   font-family: "figtree-variable";
   src: url("/Users/ghost/projects/frontend_mentor/blog-preview-card");
+} */
+@font-face {
+  font-family: "figtree-variable";
+  src: url("../assets/fonts/figtree-variablefont_wght-webfont.woff2");
 }
-
 /* Classes *****************************/
 
 /* Typography Classes */
@@ -93,7 +96,7 @@ svg {
 }
 .article-text {
   margin-bottom: 24px;
-  font-weight: 100;
+  font-weight: 900;
 }
 .article-author {
 }
