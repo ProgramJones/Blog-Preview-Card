@@ -4,8 +4,9 @@ html {
   --gray-500: rgb(107, 107, 107);
   --white: rgb(255, 255, 255);
 
-  --biggest-spacing: 1rem;
-  --big-spacing: 0.75rem;
+  --biggest-spacing: 1.5rem;
+  --big-spacing: 1rem;
+  --medium-spacing: 0.75rem;
   --small-spacing: 0.5rem;
   --smallest-spacing: 0.25rem;
 
@@ -56,6 +57,16 @@ html {
 
 /* End Typography Classes */
 
+/* Margin Classes */
+.margin-bottom-12px {
+  margin-bottom: var(--medium-spacing);
+}
+.margin-bottom-24px {
+  margin-bottom: var(--biggest-spacing);
+}
+
+/* End Margin Classes */
+
 body {
   background-color: var(--yellow);
   height: 100vh;
@@ -86,25 +97,18 @@ svg {
   background-color: var(--yellow);
   color: var(--grey-950);
   display: inline-block;
-  padding: 0.25rem var(--big-spacing);
+  padding: 0.25rem var(--medium-spacing);
   border-radius: 4px;
-  margin-top: 1rem;
-  margin-bottom: var(--big-spacing);
 }
 .article-date {
-  margin-bottom: 0.75rem;
   color: black;
   font-weight: 900;
-}
-.article-title {
-  margin-bottom: 0.75rem;
 }
 .article-title:hover {
   color: var(--yellow);
   cursor: pointer;
 }
 .article-text {
-  margin-bottom: 1.5rem;
   font-weight: 900;
   color: var(--gray-500);
 }
