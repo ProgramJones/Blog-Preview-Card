@@ -49,6 +49,10 @@ html {
 .figtree-medium-14px {
   font-size: 0.875rem;
 }
+.figtree-extra-bold-11px {
+  font-size: 0.6875rem;
+  font-family: "figtree-extra-bold";
+}
 
 /* End Typography Classes */
 
@@ -124,14 +128,6 @@ img {
   align-self: center;
 }
 
-footer {
-  font-weight: bold;
-}
-
-.attribution {
-  font-size: 0.6875rem;
-  text-align: center;
-}
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
