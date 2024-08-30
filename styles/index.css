@@ -4,10 +4,10 @@ html {
   --gray-500: rgb(107, 107, 107);
   --white: rgb(255, 255, 255);
 
-  --biggest-spacing: 16px;
-  --big-spacing: 12px;
-  --small-spacing: 8px;
-  --smallest-spacing: 4px;
+  --biggest-spacing: 1rem;
+  --big-spacing: 0.75rem;
+  --small-spacing: 0.5rem;
+  --smallest-spacing: 0.25rem;
 
   --paragraph-font-size: 1rem;
   font-size: 1em;
@@ -60,7 +60,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 main {
@@ -70,7 +70,7 @@ main {
   box-shadow: 8px 8px var(--grey-950);
   border: 1px solid var(--grey-950);
   /* padding: min(10%, 24px); */
-  padding: 24px;
+  padding: 1.5rem;
 }
 
 svg {
@@ -82,25 +82,25 @@ svg {
   background-color: var(--yellow);
   color: var(--grey-950);
   display: inline-block;
-  padding: 4px var(--big-spacing);
+  padding: 0.25rem var(--big-spacing);
   border-radius: 4px;
-  margin-top: 16px;
+  margin-top: 1rem;
   margin-bottom: var(--big-spacing);
 }
 .article-date {
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
   color: black;
   font-weight: 900;
 }
 .article-title {
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .article-title:hover {
   color: var(--yellow);
   cursor: pointer;
 }
 .article-text {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   font-weight: 900;
   color: var(--gray-500);
 }
@@ -112,12 +112,12 @@ svg {
 }
 
 img {
-  width: 32px;
+  width: 2rem;
 }
 
 .article-image-container {
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .article-image-container p {
