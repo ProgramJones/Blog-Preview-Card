@@ -14,9 +14,7 @@
 
 @font-face {
   font-family: "figtree-variable";
-  src: url("assets/fonts/figtree-variablefont_wght-webfont.woff2");
-  font-weight: 300 900;
-  font-style: normal;
+  src: url("/Users/ghost/projects/frontend_mentor/blog-preview-card");
 }
 
 /* Classes *****************************/
@@ -95,7 +93,7 @@ svg {
 }
 .article-text {
   margin-bottom: 24px;
-  font-weight: 900;
+  font-weight: 100;
 }
 .article-author {
 }
