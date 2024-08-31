@@ -1,13 +1,15 @@
 /* Fonts */
 @font-face {
-  font-family: "figtree-variable";
-  src: url("../assets/fonts/figtree-variablefont_wght-webfont.woff2")
-    format(woff2) tech(variations);
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
 }
 @font-face {
-  font-family: "figtree-extra-bold";
-  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format(woff2)
-    tech(variations);
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf");
+  font-weight: 900;
+  font-style: normal;
 }
 
 /* Variables */
@@ -29,8 +31,8 @@
   --space-32px: 2rem;
 
   /* Typography */
-  --font-regular: "Figtree-variable", system-ui, Helvetica, Arial, sans-serif;
-  --font-extra-bold: "Figtree-extra-bold", Helvetica, Arial, sans-serif;
+  --font-regular: "Figtree", system-ui, Helvetica, Arial, sans-serif;
+  --font-extra-bold: "Figtree", Arial, sans-serif;
   font-size: 1em;
 }
 
@@ -46,23 +48,25 @@
 .text-extra-bold-24px {
   font-size: var(--space-24px);
   font-family: var(--font-extra-bold);
-  font-weight: bold;
+  font-weight: 900;
 }
 .text-extra-bold-14px {
   font-size: var(--space-14px);
   font-family: var(--font-extra-bold);
-  font-weight: bold;
+  font-weight: 900;
 }
-.text-medium-16px {
+/* .text-medium-16px {
   font-size: var(--space-16px);
-}
+  font-weight: 300;
+} */
 .text-medium-14px {
   font-size: var(--space-14px);
+  font-weight: 600;
 }
 .text-extra-bold-11px {
   font-size: var(--space-11px);
   font-family: var(--font-extra-bold);
-  font-weight: bold;
+  font-weight: 900;
 }
 
 /* Margin and Padding Classes */
@@ -98,7 +102,6 @@ main {
   border-radius: 20px;
   box-shadow: 8px 8px var(--grey-950);
   border: 1px solid var(--grey-950);
-  /* padding: min(10%, 24px); */
 }
 
 /* Components */
@@ -116,14 +119,12 @@ svg {
 }
 .article-date {
   color: black;
-  font-weight: 900;
 }
 .article-title:hover {
   color: var(--yellow);
   cursor: pointer;
 }
 .article-text {
-  font-weight: 900;
   color: var(--gray-500);
 }
 
