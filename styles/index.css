@@ -1,5 +1,18 @@
 /* Variables and Fonts **********************/
 
+/* Fonts */
+@font-face {
+  font-family: "figtree-variable";
+  src: url("../assets/fonts/figtree-variablefont_wght-webfont.woff2")
+    format(woff2) tech(variations);
+}
+@font-face {
+  font-family: "figtree-extra-bold";
+  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format(woff2)
+    tech(variations);
+}
+/* End Fonts */
+
 /* Variables */
 html {
   --yellow: rgb(244, 208, 78);
@@ -16,22 +29,12 @@ html {
   --space-8px: 0.5rem; /* 8px */
   --space-4px: 0.25rem; /* 4px */
 
+  --regular-font-stack: "figtree-variable", system-ui, Helvetica, Arial,
+    sans-serif;
+  --extra-bold-font-stack: "figtree-extra-bol", Helvetica, Arial, sans-serif;
   font-size: 1em; /* 16px */
 }
 /* End Variables */
-
-/* Fonts */
-@font-face {
-  font-family: "figtree-variable";
-  src: url("../assets/fonts/figtree-variablefont_wght-webfont.woff2")
-    format(woff2) tech(variations);
-}
-@font-face {
-  font-family: "figtree-extra-bold";
-  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format(woff2)
-    tech(variations);
-}
-/* End Fonts */
 
 /* Classes *****************************/
 
@@ -40,17 +43,19 @@ html {
 .figtree-extra-bold-14px,
 .figtree-medium-16px,
 .figtree-medium-14px {
-  font-family: "figtree-variable";
+  font-family: var(--regular-font-stack);
   line-height: 150%;
   letter-spacing: 0px;
 }
 .figtree-extra-bold-24px {
   font-size: var(--space-24px);
-  font-family: "figtree-extra-bold";
+  font-family: var(--extra-bold-font-stack);
+  font-weight: bold;
 }
 .figtree-extra-bold-14px {
   font-size: var(--space-14px);
-  font-family: "figtree-extra-bold";
+  font-family: var(--extra-bold-font-stack);
+  font-weight: bold;
 }
 .figtree-medium-16px {
   font-size: var(--space-16px);
@@ -60,7 +65,8 @@ html {
 }
 .figtree-extra-bold-11px {
   font-size: var(--space-11px);
-  font-family: "figtree-extra-bold";
+  font-family: var(--extra-bold-font-stack);
+  font-weight: bold;
 }
 /* End Typography Classes */
 
