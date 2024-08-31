@@ -14,7 +14,7 @@
 /* End Fonts */
 
 /* Variables */
-html {
+:root {
   --yellow: rgb(244, 208, 78);
   --grey-950: rgb(17, 17, 17);
   --gray-500: rgb(107, 107, 107);
