@@ -1,19 +1,25 @@
+/* Variables and Fonts **********************/
+
+/* Variables */
 html {
   --yellow: rgb(244, 208, 78);
   --grey-950: rgb(17, 17, 17);
   --gray-500: rgb(107, 107, 107);
   --white: rgb(255, 255, 255);
 
-  --biggest-spacing: 1.5rem;
-  --big-spacing: 1rem;
-  --medium-spacing: 0.75rem;
-  --small-spacing: 0.5rem;
-  --smallest-spacing: 0.25rem;
+  --space-24px: 1.5rem; /* 24px */
+  --space-16px: 1rem; /* 16px */
+  --space-14px: 0.875rem; /* 14px */
+  --space-12px: 0.75rem; /* 12px */
+  --space-11px: 0.6875rem; /* 11px */
+  --space-8px: 0.5rem; /* 8px */
+  --space-4px: 0.25rem; /* 4px */
 
-  --paragraph-font-size: 1rem;
-  font-size: 1em;
+  font-size: 1em; /* 16px */
 }
+/* End Variables */
 
+/* Fonts */
 @font-face {
   font-family: "figtree-variable";
   src: url("../assets/fonts/figtree-variablefont_wght-webfont.woff2")
@@ -24,10 +30,11 @@ html {
   src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format(woff2)
     tech(variations);
 }
+/* End Fonts */
+
 /* Classes *****************************/
 
 /* Typography Classes */
-
 .figtree-extra-bold-24px,
 .figtree-extra-bold-14px,
 .figtree-medium-16px,
@@ -37,35 +44,44 @@ html {
   letter-spacing: 0px;
 }
 .figtree-extra-bold-24px {
-  font-size: 1.5rem;
+  font-size: var(--space-24px);
   font-family: "figtree-extra-bold";
 }
 .figtree-extra-bold-14px {
-  font-size: 0.875rem;
+  font-size: var(--space-14px);
   font-family: "figtree-extra-bold";
 }
 .figtree-medium-16px {
-  font-size: 1rem;
+  font-size: var(--space-16px);
 }
 .figtree-medium-14px {
-  font-size: 0.875rem;
+  font-size: var(--space-14px);
 }
 .figtree-extra-bold-11px {
-  font-size: 0.6875rem;
+  font-size: var(--space-11px);
   font-family: "figtree-extra-bold";
 }
-
 /* End Typography Classes */
 
 /* Margin Classes */
 .margin-bottom-12px {
-  margin-bottom: var(--medium-spacing);
+  margin-bottom: var(--space-12px);
 }
 .margin-bottom-24px {
-  margin-bottom: var(--biggest-spacing);
+  margin-bottom: var(--space-24px);
 }
-
 /* End Margin Classes */
+
+/* Padding Classes */
+.padding-4px-12px {
+  padding: var(--space-4px) var(--space-12px);
+}
+.padding-24px {
+  padding: var(--space-24px);
+}
+/* End Padding Classes */
+
+/* Generic Styling ************************/
 
 body {
   background-color: var(--yellow);
@@ -85,7 +101,6 @@ main {
   box-shadow: 8px 8px var(--grey-950);
   border: 1px solid var(--grey-950);
   /* padding: min(10%, 24px); */
-  padding: 1.5rem;
 }
 
 svg {
@@ -97,7 +112,6 @@ svg {
   background-color: var(--yellow);
   color: var(--grey-950);
   display: inline-block;
-  padding: 0.25rem var(--medium-spacing);
   border-radius: 4px;
 }
 .article-date {
@@ -111,8 +125,6 @@ svg {
 .article-text {
   font-weight: 900;
   color: var(--gray-500);
-}
-.article-author {
 }
 
 .article-image-container {
