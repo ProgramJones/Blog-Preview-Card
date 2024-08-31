@@ -31,7 +31,7 @@ html {
 
   --regular-font-stack: "figtree-variable", system-ui, Helvetica, Arial,
     sans-serif;
-  --extra-bold-font-stack: "figtree-extra-bol", Helvetica, Arial, sans-serif;
+  --extra-bold-font-stack: "figtree-extra-bold", Helvetica, Arial, sans-serif;
   font-size: 1em; /* 16px */
 }
 /* End Variables */
