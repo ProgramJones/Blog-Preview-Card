@@ -35,31 +35,31 @@
 }
 
 /* Typography Classes */
-.figtree-extra-bold-24px,
-.figtree-extra-bold-14px,
-.figtree-medium-16px,
-.figtree-medium-14px {
+.text-extra-bold-24px,
+.text-extra-bold-14px,
+.text-medium-16px,
+.text-medium-14px {
   font-family: var(--font-regular);
   line-height: 150%;
   letter-spacing: 0px;
 }
-.figtree-extra-bold-24px {
+.text-extra-bold-24px {
   font-size: var(--space-24px);
   font-family: var(--font-extra-bold);
   font-weight: bold;
 }
-.figtree-extra-bold-14px {
+.text-extra-bold-14px {
   font-size: var(--space-14px);
   font-family: var(--font-extra-bold);
   font-weight: bold;
 }
-.figtree-medium-16px {
+.text-medium-16px {
   font-size: var(--space-16px);
 }
-.figtree-medium-14px {
+.text-medium-14px {
   font-size: var(--space-14px);
 }
-.figtree-extra-bold-11px {
+.text-extra-bold-11px {
   font-size: var(--space-11px);
   font-family: var(--font-extra-bold);
   font-weight: bold;
