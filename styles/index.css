@@ -98,7 +98,7 @@ body {
 
 main {
   background-color: var(--white);
-  width: 384px;
+  width: clamp(280px, 50%, 384px);
   border-radius: 20px;
   box-shadow: 8px 8px var(--grey-950);
   border: 1px solid var(--grey-950);
